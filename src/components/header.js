@@ -6,9 +6,9 @@ const Header = ({ siteTitle }) => (
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div className="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">
+      <Link to="/" className="navbar-item">
         <h1><strong>Tom Haines</strong></h1>
-      </a>
+        </Link>
 
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
