@@ -2,16 +2,40 @@ module.exports = {
   siteMetadata: {
     title: `Tom Haines`,
     description: `Tom Haines - Computer Science student @ University of Bristol. \n Personal site and blog.`,
-    author: `@gatsbyjs`,
+    author: `Tom Haines`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-remark-images`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 600,
+              sizeByPixelDensity: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-prismjs`
+          }
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/posts`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
