@@ -1,10 +1,12 @@
 import React from 'react'
+import SEO from '../components/seo'
 import Layout from '../components/layout'
 import NadeStack from '../components/projects/nadestack'
 import FancyLights from '../components/projects/fancy-lights'
 
 const Projects = () => (
   <Layout>
+    <SEO title="Projects" />
     <section class="section">
       <div class="container">
     <h1 className="is-size-3">Interesting Projects</h1>
