@@ -8,7 +8,7 @@ export default () => (
     Interested in real-time web applications, IoT and the theory of computation.
   </h5>
   <br />
-  <p className="is-italic">I'm looking for summer internships currently. If your looking to offer Bristol (UK) or Remote internships, please contact me :)</p>
+  <p className="is-italic">I'm looking for summer internships currently. If you're looking to offer Bristol (UK) or Remote internships, please contact me :)</p>
   <br />
   <p>my cv</p>
   <br />
