@@ -3,6 +3,7 @@ import SEO from '../components/seo'
 import Layout from '../components/layout'
 import NadeStack from '../components/projects/nadestack'
 import FancyLights from '../components/projects/fancy-lights'
+import Dwyl from '../components/projects/dwyl'
 
 const Projects = () => (
   <Layout>
@@ -17,6 +18,7 @@ const Projects = () => (
 
     <section class="section">
     <div className="container">
+    <div className="box"><Dwyl /></div>
       <div className="box"><FancyLights /></div>
       <div className="box"><NadeStack /></div>
     </div>

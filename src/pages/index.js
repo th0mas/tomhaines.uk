@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import AboutMe from "../components/about-me"
+import ConsultBrief from "../components/consult-brief"
 import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => {
@@ -11,12 +12,21 @@ const IndexPage = ({ data }) => {
   return (
   <Layout>
     <SEO title="Home" />
+    <section class="section">
+      <div class="container">
+    <h1 className="is-size-3">Computer Science Student, Web & Elixir Developer.</h1>
+    <AboutMe></AboutMe>
+    </div>
+    </section>
     <div class="section">
     <div class="container">
     <div class="columns">
-      <div class="column is-one-quarter"><AboutMe /></div>
       <div class="column">
-        <h1 className="title is-3">Recent Posts</h1>
+      <ConsultBrief />
+      </div>
+      <div class="column">
+        <br></br>
+        <h1 className="is-size-4">Recent Posts</h1>
         <ul>
         <hr />
         {posts.map(({node: post}) => (
